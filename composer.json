@@ -1,0 +1,35 @@
+{
+    "name": "totalcrm/cdek-php-sdk",
+    "type": "library",
+    "description": "CDEK 2.0 SDK PHP by TotalCRM",
+    "keywords": ["TotalCRM", "PHP", "CDEK"],
+    "homepage": "https://totalcrm.ru",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandr Romanenko",
+            "email": "romanenko.a@bk.ru"
+        },
+        {
+            "name": "TotalCRM",
+            "email": "info@totalcrm.ru"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "jms/serializer": "^3.32",
+        "guzzlehttp/psr7": "^2.13",
+        "psr/http-client": "^1.0.3",
+        "psr/http-factory": "^1.1.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "TotalCRM\\Cdek\\": "src/"
+        }
+    }
+}
