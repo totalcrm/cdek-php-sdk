@@ -54,7 +54,6 @@ final class Client
     {
         $this->httpClient = new Api($http, $account, $secure);
         $this->serializer = SerializerBuilder::create()
-            ->enableAttributes()
             ->setPropertyNamingStrategy(
                 new SerializedNameAnnotationStrategy(new IdenticalPropertyNamingStrategy())
             )
